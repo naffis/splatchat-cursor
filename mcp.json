@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "splatchat": {
+      "url": "https://mcp.splatchat.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SPLATCHAT_API_KEY}"
+      }
+    }
+  }
+}
