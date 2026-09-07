@@ -1,0 +1,15 @@
+---
+description: Light guidance for SplatChat MCP tools, keys, scopes, and disclosure
+alwaysApply: false
+---
+
+# SplatChat MCP
+
+- Connect only to `https://mcp.splatchat.com/mcp` with `Authorization: Bearer ${SPLATCHAT_API_KEY}`.
+- Never commit `pk_` keys or paste them into files in this repo.
+- Mint the smallest scope for the job. Write tools fail closed on 401/403.
+- Confirm with the user before `make_phone_call`, `join_meeting`, `start_broadcast`, `create_clip`, or any `x_post` / `x_reply` / `x_quote` / `x_send_dm`.
+- Meeting bots need `avatar_ready`. Phone can proceed when `phone_eligible` is true.
+- Meeting display name is `Name (AI)`. Phone and broadcast characters disclose they are an AI on the first turn. Do not hide that.
+- Phone: US/Canada, stored consent basis, 8am to 9pm callee-local. No purchased-list cold calls.
+- Prefer `splatchat-connect`, `splatchat-sdr`, and `splatchat-meeting-bot` for those jobs.
